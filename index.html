@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ফাহমিদ হাসান মশহুদ | ফাহমিদ.পাতা.বাংলা</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              base: "#050505",
+              card: "rgba(20, 20, 20, 0.4)",
+              textMain: "#ffffff",
+              accent: "#888888",
+              neo: "#1a1a1a",
+            },
+            fontFamily: {
+              sans: ['"Hind Siliguri"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #050505;
+        background-image:
+          radial-gradient(circle at 50% 0%, #111 0%, transparent 50%),
+          radial-gradient(circle at 0% 100%, #0a0a0a 0%, transparent 40%);
+      }
+      .glass {
+        background: rgba(15, 15, 15, 0.5);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+      }
+      .glass-hover:hover {
+        background: rgba(255, 255, 255, 0.03);
+        border-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-4px);
+        box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.9);
+      }
+      .text-glow {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      }
+      .pulse-border {
+        position: relative;
+      }
+      .pulse-border::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        animation: pulse 4s infinite;
+      }
+      @keyframes pulse {
+        0% {
+          opacity: 0.2;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 0.2;
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="text-textMain min-h-screen flex items-center justify-center p-4 selection:bg-white selection:text-black"
+  >
+    <div class="max-w-4xl w-full grid grid-cols-1 md:grid-cols-12 gap-4">
+      <header
+        class="md:col-span-8 glass rounded-[2rem] p-10 flex flex-col justify-end relative overflow-hidden group"
+      >
+        <div
+          class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity"
+        >
+          <svg
+            width="120"
+            height="120"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="0.5"
+          >
+            <path
+              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+            ></path>
+          </svg>
+        </div>
+        <h1
+          class="text-4xl md:text-6xl font-bold tracking-tighter text-glow mb-4"
+        >
+          ফাহমিদ হাসান মশহুদ
+        </h1>
+        <p
+          class="text-accent text-lg font-light max-w-md uppercase tracking-widest leading-relaxed"
+        >
+          STUDENT <span class="mx-2">|</span> Tech Visionary <span class="mx-2">|</span> Entrepreneur
+        </p>
+      </header>
+
+      <div
+        class="md:col-span-4 glass rounded-[2rem] p-8 flex flex-col justify-center border-l-4 border-white/20"
+      >
+        <span class="text-xs text-accent uppercase tracking-tighter mb-2"
+          >লক্ষ্য ও উদ্দেশ্য</span
+        >
+        <p class="text-sm text-accent leading-relaxed">
+          স্বপ্ন এবং প্যাশন — দুটির সমন্বয়ে ভবিষ্যৎ গড়ার পথে এক
+          নিরন্তর যাত্রা।
+        </p>
+      </div>
+
+      <div
+        class="md:col-span-4 glass glass-hover rounded-[2rem] p-8 transition-all duration-500 cursor-pointer"
+      >
+        <div
+          class="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center mb-6"
+        >
+          <span class="text-xl">📁</span>
+        </div>
+        <h3 class="text-xl font-medium mb-2">প্রেস রিলিজ</h3>
+        <p class="text-sm text-accent mb-4">
+          আমার প্রেস রিসোর্স আর্কাইভ।
+        </p>
+        <a href="https://fahmid.me/img/" class="text-xs inline-flex items-center gap-2 group">
+          প্রবেশ করুন
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
+        </a>
+      </div>
+
+      <div
+        class="md:col-span-4 glass glass-hover rounded-[2rem] p-8 transition-all duration-500 cursor-pointer"
+      >
+        <div
+          class="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center mb-6"
+        >
+          <span class="text-xl">🚀</span>
+        </div>
+        <h3 class="text-xl font-medium mb-2">Tarbin Labs</h3>
+        <p class="text-sm text-accent mb-4">আমার প্রধান ভেঞ্চার ও টেক প্রজেক্ট।</p>
+        <a href="https://fahmid.me/" class="text-xs inline-flex items-center gap-2 group">
+          এক্সপ্লোর করুন
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
+        </a>
+      </div>
+
+      <div
+        class="md:col-span-4 glass glass-hover rounded-[2rem] p-8 transition-all duration-500 cursor-pointer flex flex-col justify-between"
+      >
+        <div>
+          <h3 class="text-xl font-medium mb-2">যোগাযোগ</h3>
+          <p class="text-sm text-accent mb-6 italic">fahmid@internet.ru
+            <br> <br> IG@fahmid.one
+          </p>
+        </div>
+        <div class="flex gap-3">
+          <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+          <span class="text-[10px] uppercase tracking-widest text-accent"
+            >Let's discuss together</span
+          >
+        </div>
+      </div>
+
+      <div
+        class="md:col-span-12 flex justify-between items-center px-6 py-4 mt-4"
+      >
+        <p class="text-[10px] text-accent uppercase tracking-[0.3em]">
+          © 2026 FAHMID HASAN MASHUD
+        </p>
+        <a
+          href="https://fahmid.me"
+          class="glass px-6 py-2 rounded-full text-xs font-medium hover:bg-white hover:text-black transition-all duration-300"
+        >
+          CLICK FOR MAIN PORTFOLIO
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
